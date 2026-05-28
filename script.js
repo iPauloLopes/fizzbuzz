@@ -1,7 +1,14 @@
 let input = parseInt(prompt("Enter ur number and this thing will fizzbuzz it"))
 
 for (let number = 1; number <= input; number++) {
-    if (number === 2) {
-        console.log("test")
-    } else console.log(number)
+    if (number % 3 === 0 && number % 5 === 0) {
+        console.log ("FizzBuzz")
+    }
+    else if (number % 3 === 0) {
+        console.log ("Fizz")
+    }
+    else if (number % 5 === 0) {
+        console.log ("Buzz")
+    }
+    else console.log(number)
 }
